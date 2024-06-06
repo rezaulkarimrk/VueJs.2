@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Js</title>
+
+    <!-- link tailwin -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- VueJs added -->
+    <script src="vue.js"></script>
+</head>
+<body>
+    <!-- app -->
+    <!--
+    <div id="app">
+        <p>{{title}}</p>
+        <p>{{isItTrue}}</p>
+        <p>{{cars}}</p>
+        <p>{{cars[0]}}</p>
+        <p>{{robot.name}}</p>
+        <p>{{greting()}}</p>
+        <p>{{greeting()}}</p>
+        <p>{{greetting()}}</p>
+        <p>{{callBack()}}</p>
+    </div>
+    -->
+
+    <!-- app1 -->
+    <!--
+    <div id="app1">
+        <img v-bind:src="src" v-bind:alt="alt">
+        <a class="mt-4 inline-block" target="_blank" v-bind:href="link">Follow My Facebook</a>
+    </div>
+    -->
+
+    <!-- app2 -->
+    <!--
+    <div id="app2">
+        <p v-text="myText"></p>
+        <p  v-html="myHtml"></p>
+    </div>
+    -->
+
+    <!-- app3 -->
+    <!--
+    <div id="app3">
+        <p v-if="userAge >= allowedAge">You are good</p>
+        <p v-else>You are not good to goo</p>
+
+        <p v-text="changeUser()"></p>
+    </div>
+    -->
+
+    <!-- app4 -->
+    <!-- 
+    <div id="app4">
+        <p v-show="user=='rezaul'">This is Rezaul Karim RK</p>
+        <p v-show="user!=='rezaul'">This is not Rezaul Karim RK</p>
+    </div>
+    -->
+    
+    <!-- app5 -->
+    <!--
+    <div id="app5">
+        <p class="ml-2 mt-5 leading-3" v-for="(car, index) in cars">
+            {{index+1}}: {{car}}
+        </p>
+        <p  class="ml-2 mt-5 leading-[1px]" v-for="(value, key, index) in user">
+            {{index + 1}}: {{key}}: {{value}}
+        </p>
+        <div class="grid grid-cols-5 gap-3 mt-10">
+            <p class="ml-2 mt-5 leading-[1px]" v-for="n in 10">{{n}}</p>
+        </div>
+        
+    </div>
+    -->
+
+    <!-- app6 -->
+    <!--  
+    <div id="app6">
+        <h1>{{name}}</h1>
+        <h1 v-once>{{name}}</h1>
+        {{update()}}
+    </div>
+    -->
+    
+    <!-- app7 -->
+    <!--
+    <div id="app7">
+        <p class="mt-3 ms-3 text-5xl capitalize">{{name}}</p>
+        <button v-on:click="update" class="border-2 text-white text-2xl rounded-full border-yellow-200 py-3 px-5 bg-purple-400 mt-3 ms-3 hover:bg-purple-600 transition">Click Me</button>
+        <div v-on:mousemove="getCord" class="mt-10 ms-10 h-[400px] w-[400px] bg-pink-400">
+            <p class="mt-2 ms-2 text-white text-2xl">Hover me</p>
+            
+        </div>
+        <div class="mt-10 ms-10">
+            <p>X: {{XX}}</p>
+            <p>Y: {{YY}}</p>
+        </div>
+    </div>
+    -->
+    
+    <!-- app8 -->
+    <!-- 
+    <div id="app8" class="container">
+        <h1 class="genM">{{name}}</h1>
+        <button v-on:click.right="upsateName('Moutusi Mou', $event)" class="btn">Click me</button>
+
+        <div class="genM">
+            <form action="" v-on:submit.prevent="handleSubmit">
+                <input required type="text" name="inName" class="caret-lime-600 ring-2">
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+    -->
+
+    <!-- app9 -->
+    <!-- 
+    <div id="app8">
+        <form class="genM" action="" v-on:submit.prevent="handleSubmit">
+            <div>
+                <label>First Name</label>
+                <input class="border" type="text" v-model="formData.firstName">
+            </div>
+            <div class="mt-2">
+                <label>Last Name</label>
+                <input class="border-2" type="text" v-model="formData.lastName">
+            </div>
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </div>
+    -->
+
+    <!-- app10 -->
+    <!--
+    <div id="app10">
+        <button class="btn" v-on:click="a++">Add A</button>
+        <button class="btn" v-on:click="b++">Add B</button>
+
+        <p>A = {{a}}</p>
+        <p>B = {{b}}</p>
+
+        <p>Salary + A = {{addToA}}</p>
+        <p>Salary + B = {{addToB}}</p>
+    </div>
+    -->
+
+
+    <!-- app11 -->
+    <div id="app11">
+        <button class="btn" @click="a++">Add A</button>
+        <p>A = {{a}}</p>
+
+        <a target="_blank" v-bind:href="link">google</a>
+        <br>
+        <input type="text" v-model="name" class="border-2">
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
