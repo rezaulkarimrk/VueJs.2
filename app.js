@@ -239,8 +239,18 @@ const aapp22 = new Vue({
 })
 */
 
+//app13
 
+const aap13 = new Vue({
+  data: {
+    name: "Rezaul Karim RK",
+  },
+  template: `<p>My Name is {{name}}</p>`,
+});
 
+setTimeout(() => {
+  aap13.$mount('#app13')
+}, 2000);
 
 
 
