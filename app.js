@@ -240,17 +240,44 @@ const aapp22 = new Vue({
 */
 
 //app13
+/*
 
+const temp = `<p>My Name is {{name}}</p>`
 const aap13 = new Vue({
   data: {
     name: "Rezaul Karim RK",
   },
-  template: `<p>My Name is {{name}}</p>`,
+  template: temp,
 });
 
 setTimeout(() => {
   aap13.$mount('#app13')
 }, 2000);
+*/
+
+//app14
+/*
+Vue.component('rk', {
+  data(){
+     return {
+       name: "Rezaul Karim RK",
+     };
+  },
+  template: "<p>{{name}}</p>"
+})
+
+new Vue({
+  el:"#app14"
+});
+*/
+
+
+
+
+
+
+
+
 
 
 
