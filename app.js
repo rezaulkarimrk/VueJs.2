@@ -206,6 +206,7 @@ new Vue({
 */
 
 //app11
+/*
 new Vue({
     el: "#app11",
     data: {
@@ -214,8 +215,29 @@ new Vue({
         name: ""
     }
 });
+*/
 
+//app12
+/*
+const aapp11 = new Vue({
+  el: "#aapp1",
+  data: {
+    value: "1st instance",
+  },
+  methods: {
+    changeValue(){
+      aapp22.value = "change this for instance 1"
+    }
+  },
+});
 
+const aapp22 = new Vue({
+  el: "#aapp2",
+  data: {
+    value: "2nd instance"
+  }
+})
+*/
 
 
 
